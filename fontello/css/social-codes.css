@@ -1,4 +1,5 @@
 
+.icon-android:before { content: '\e808'; } /* '' */
 .icon-gplus:before { content: '\e800'; } /* '' */
 .icon-spotify:before { content: '\e801'; } /* '' */
 .icon-linkedin:before { content: '\e802'; } /* '' */
@@ -6,4 +7,4 @@
 .icon-youtube:before { content: '\e804'; } /* '' */
 .icon-email:before { content: '\e805'; } /* '' */
 .icon-facebook:before { content: '\e806'; } /* '' */
-.icon-github-circled:before { content: '\e807'; } /* '' */
+.icon-github:before { content: '\e807'; } /* '' */

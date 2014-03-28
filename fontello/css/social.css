@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'social';
-  src: url('../font/social.eot?80335720');
-  src: url('../font/social.eot?80335720#iefix') format('embedded-opentype'),
-       url('../font/social.woff?80335720') format('woff'),
-       url('../font/social.ttf?80335720') format('truetype'),
-       url('../font/social.svg?80335720#social') format('svg');
+  src: url('../font/social.eot?50002452');
+  src: url('../font/social.eot?50002452#iefix') format('embedded-opentype'),
+       url('../font/social.woff?50002452') format('woff'),
+       url('../font/social.ttf?50002452') format('truetype'),
+       url('../font/social.svg?50002452#social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'social';
-    src: url('../font/social.svg?80335720#social') format('svg');
+    src: url('../font/social.svg?50002452#social') format('svg');
   }
 }
 */
@@ -50,6 +50,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
+.icon-android:before { content: '\e808'; } /* '' */
 .icon-gplus:before { content: '\e800'; } /* '' */
 .icon-spotify:before { content: '\e801'; } /* '' */
 .icon-linkedin:before { content: '\e802'; } /* '' */
@@ -57,4 +58,4 @@
 .icon-youtube:before { content: '\e804'; } /* '' */
 .icon-email:before { content: '\e805'; } /* '' */
 .icon-facebook:before { content: '\e806'; } /* '' */
-.icon-github-circled:before { content: '\e807'; } /* '' */
+.icon-github:before { content: '\e807'; } /* '' */
