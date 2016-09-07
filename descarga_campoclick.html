@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>CampoClick</title>
+<script>
+	var isMobile = {
+	    Windows: function() {
+	        return /IEMobile/i.test(navigator.userAgent);
+	    },
+	    Android: function() {
+	        return /Android/i.test(navigator.userAgent);
+	    },
+	    BlackBerry: function() {
+	        return /BlackBerry/i.test(navigator.userAgent);
+	    },
+	    iOS: function() {
+	        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+	    },
+	    any: function() {
+	        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+	    }
+	};
+
+	if(isMobile.Android())
+		location.href = "https://play.google.com/store/apps/details?id=cl.elun.campoclick&hl=es";
+	if else(isMobile.iOS())
+		location.href = "https://itunes.apple.com/cl/app/campoclick/id1056282408?mt=8";
+	else
+		location.href = "http://www.campoclick.cl";
+</script>
+</head>
+</html>
