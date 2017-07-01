@@ -4,7 +4,7 @@
 
   Santigo, Chile 2017
 
-  last update: 19/06/2017
+  last update: 01/07/2017
 -->
 <!DOCTYPE html>
 <html>
@@ -34,7 +34,8 @@ window.addEventListener('load', function(){
       btnLIN = document.getElementById('btnLIN'),
       btnFB = document.getElementById('btnFB'),
       btnGPlay = document.getElementById('btnGPlay'),
-      aboutMe = document.getElementById('aboutMe');
+      aboutMe = document.getElementById('aboutMe'),
+      age = document.getElementById('age');
 
   addListener(btnMail, 'click', function() { ga('send', 'event', 'Social', 'Email'); });
   addListener(btnGPlus, 'click', function() { ga('send', 'event', 'Social', 'Google+'); });
@@ -43,15 +44,18 @@ window.addEventListener('load', function(){
   addListener(btnFB, 'click', function() { ga('send', 'event', 'Social', 'Facebook'); });
   addListener(btnGPlay, 'click', function() { ga('send', 'event', 'Social', 'Google Play'); });
   addListener(aboutMe, 'click', function() { ga('send', 'event', 'Social', 'About Me'); });
-
+  
+  age[0].innerHTML = getAge('09-07-1989');
+  
   function addListener(element, type, callback){if(element.addEventListener){element.addEventListener(type,callback);}else if(element.attachEvent){element.attachEvent('on' + type, callback);}}
+  function getAge(dateString) {var today = new Date();var birthDate = new Date(dateString);var age = today.getFullYear() - birthDate.getFullYear();var m = today.getMonth() - birthDate.getMonth();if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {age--;}return age;}
 });
 </script>
 </head>
 <body>
   <div id="wrap">
     <h1>Rodrigo Castro Salazar</h1>
-    <h2>27 a&ntilde;os, Soltero, Ingeniero Civil Inform&aacute;tico de la <a href="http://www.udec.cl" target="_blank">UdeC</a>, Scout, y soy de <a href="https://goo.gl/maps/iafZr" target="_blank">Chill&aacute;n</a> pero adoptado en Santiago. LLevo m&aacute;s de 3 a&ntilde;os trabajando en Santiago, y actualmente trabajo como Consultor Senior en Deloitte Chile</h2>
+    <h2><span id="age"></span> a&ntilde;os, Soltero, Ingeniero Civil Inform&aacute;tico de la <a href="http://www.udec.cl" target="_blank">UdeC</a>, Scout, y soy de <a href="https://goo.gl/maps/iafZr" target="_blank">Chill&aacute;n</a> pero adoptado en Santiago. LLevo m&aacute;s de 3 a&ntilde;os trabajando en Santiago, y actualmente trabajo como Consultor Senior en Deloitte Chile</h2>
     <h5><a id="aboutMe" href="http://about.me/rkstro" target="_blank">about.me/rkstro</a></h5>
     <hr />
     <div id="links">
