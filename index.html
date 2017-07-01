@@ -45,7 +45,7 @@ window.addEventListener('load', function(){
   addListener(btnGPlay, 'click', function() { ga('send', 'event', 'Social', 'Google Play'); });
   addListener(aboutMe, 'click', function() { ga('send', 'event', 'Social', 'About Me'); });
   
-  age[0].innerHTML = getAge('09-07-1989');
+  age.innerHTML = getAge('09-07-1989');
   
   function addListener(element, type, callback){if(element.addEventListener){element.addEventListener(type,callback);}else if(element.attachEvent){element.attachEvent('on' + type, callback);}}
   function getAge(dateString) {var today = new Date();var birthDate = new Date(dateString);var age = today.getFullYear() - birthDate.getFullYear();var m = today.getMonth() - birthDate.getMonth();if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {age--;}return age;}
