@@ -29,21 +29,15 @@
 <script type="text/javascript">
 window.addEventListener('load', function(){
   var btnMail = document.getElementById('btnMail'),
-      btnGPlus = document.getElementById('btnGPlus'),
       btnTW = document.getElementById('btnTW'),
       btnLIN = document.getElementById('btnLIN'),
-      btnFB = document.getElementById('btnFB'),
       btnGPlay = document.getElementById('btnGPlay'),
-      aboutMe = document.getElementById('aboutMe'),
       age = document.getElementById('age');
 
   addListener(btnMail, 'click', function() { ga('send', 'event', 'Social', 'Email'); });
-  addListener(btnGPlus, 'click', function() { ga('send', 'event', 'Social', 'Google+'); });
   addListener(btnTW, 'click', function() { ga('send', 'event', 'Social', 'Twitter'); });
-  addListener(btnLIN, 'click', function() { ga('send', 'event', 'Social', 'Linkedin'); });
-  addListener(btnFB, 'click', function() { ga('send', 'event', 'Social', 'Facebook'); });
+  addListener(btnLIN, 'click', function() { ga('send', 'event', 'Social', 'Linkedin'); }
   addListener(btnGPlay, 'click', function() { ga('send', 'event', 'Social', 'Google Play'); });
-  addListener(aboutMe, 'click', function() { ga('send', 'event', 'Social', 'About Me'); });
   
   age.innerHTML = getAge('09-07-1989');
   
