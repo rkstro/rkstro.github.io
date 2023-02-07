@@ -7,6 +7,14 @@
   <style type="text/css">
     @import url(social.min.css);:root{--bg-color:#f1f4f9;--main-color:#273c62;--main2-color:#1c2b46;--accent-color:#4970b6}html{margin:0;padding:0;font-family:'Noto Sans SC',sans-serif;height:100%;background:var(--bg-color);border-left:10px solid var(--main-color)}#wrap{margin:calc(1em + 6vw) 15px 15px 15px;color:var(--main-color);width:90%;max-width:900px}h1{font-family:Poppins,sans-serif;font-size:calc(1.3em + 4vw);margin:0;padding:0}h1:hover{color:var(--main2-color);transition:color .3s linear}h2{font-weight:300;font-size:calc(1em + .3vw);margin-top:-2px}h2 a,h2 a:active,h2 a:visited{text-decoration:none;font-weight:700;color:var(--main-color)}h2 a:hover{background:var(--main2-color);color:var(--bg-color)}#divider{width:250px;border:var(--main2-color) 1px solid;margin:25px 0}#links a,#links i{text-decoration:none;color:var(--main2-color);font-size:1.4em}#links i:hover{color:var(--accent-color);transition:all .3s linear}@media screen and (max-width:768px){#links a,#links i{font-size:1.2em}}
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MSPY0W1JJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9MSPY0W1JJ');
+  </script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -17,7 +25,7 @@
     ga('send', 'pageview');
   </script>
   <script type="text/javascript">
-    window.addEventListener("load",function(){function a(a,b,c){a.addEventListener?a.addEventListener(b,c):a.attachEvent&&a.attachEvent("on"+b,c)}function b(a){var b=new Date,c=new Date(a),d=b.getFullYear()-c.getFullYear(),e=b.getMonth()-c.getMonth();return(0>e||0===e&&b.getDate()<c.getDate())&&d--,d}var c=document.getElementById("btnMail"),d=document.getElementById("btnTW"),e=document.getElementById("btnLIN"),f=document.getElementById("btnGPlay"),g=document.getElementById("age"),h=document.getElementById("time-stgo");a(c,"click",function(){ga("send","event","Social","Email")}),a(d,"click",function(){ga("send","event","Social","Twitter")}),a(e,"click",function(){ga("send","event","Social","Linkedin")}),a(f,"click",function(){ga("send","event","Social","Google Play")}),g.innerHTML=b("09-07-1989"),h.innerHTML=b("01-03-2014")});
+    window.addEventListener("load",function(){function a(a,b,c){a.addEventListener?a.addEventListener(b,c):a.attachEvent&&a.attachEvent("on"+b,c)}function b(a){var b=new Date,c=new Date(a),d=b.getFullYear()-c.getFullYear(),e=b.getMonth()-c.getMonth();return(0>e||0===e&&b.getDate()<c.getDate())&&d--,d}var c=document.getElementById("btnMail"),d=document.getElementById("btnTW"),e=document.getElementById("btnLIN"),f=document.getElementById("btnGPlay"),g=document.getElementById("age"),h=document.getElementById("time-stgo");a(c,"click",function(){ga("send","event","Social","Email");gtag('event','social_click',{social_name:'email'})}),a(d,"click",function(){ga("send","event","Social","Twitter");gtag('event','social_click',{social_name:'twitter'})}),a(e,"click",function(){ga("send","event","Social","Linkedin");gtag('event','social_click',{social_name:'linkedin'})}),a(f,"click",function(){ga("send","event","Social","Google Play");gtag('event','social_click',{social_name:'google_play'})}),g.innerHTML=b("09-07-1989"),h.innerHTML=b("01-03-2014")});
   </script>
 </head>
 <body>
@@ -31,8 +39,8 @@
         document.write("<a id=\"btnMail\" href=\"mail" + "to:" + new Array("hola","rodrigocastro.cl").join("@") + "\"  target=\"_blank\">" + '<i class="icon-email"></i>' + "</" + "a>");
       </script>
       <a id="btnTW" href="http://twitter.com/rkstro" target="_blank"><i class="icon-twitter"></i></a>
-      <a id="btnLIN" href="http://cl.linkedin.com/in/rkstro/" target="_blank"><i class="icon-linkedin"></i></a>
-      <a id="btnGPlay" href="https://play.google.com/store/apps/developer?id=Rodrigo+Castro" target="_blank"><i class="icon-android"></i></a>
+      <a id="btnLIN" href="http://cl.linkedin.com/in/rcastros/" target="_blank"><i class="icon-linkedin"></i></a>
+      <!--<a id="btnGPlay" href="https://play.google.com/store/apps/developer?id=Rodrigo+Castro" target="_blank"><i class="icon-android"></i></a>-->
     </div>
   </div>
 </body>
